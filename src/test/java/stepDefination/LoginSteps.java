@@ -14,8 +14,10 @@ public class LoginSteps
 	{
 		wd=new ChromeDriver();
 		wd.manage().window().maximize();
+		System.out.println("Browser is opened");
 		
 		wd.get("https://www.saucedemo.com/v1/");
+		System.out.println("Application is opened");
 	}
 	
 	@When("User enters valid username {string}")
